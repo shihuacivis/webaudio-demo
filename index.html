@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta content="yes" name="apple-mobile-web-app-capable"/>
+  <meta content="yes" name="apple-touch-fullscreen"/>
+  <meta content="telephone=no" name="format-detection"/>
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no">
+  <title>webaudio demo</title>
+</head>
+<body>
+  <button onclick="playMusic()">背景音乐</button>
+  <button onclick="playEffect()">播放音效</button>
+  <button onclick="stopMusic()">停止背景音乐</button>
+  <button onclick="stopEffect()">停止音效</button>
+  <script type="text/javascript" src="audioEngine.js"></script>
+  <script type="text/javascript">
+  function playEffect() {
+    audioEngine.playEffect('res/count.mp3', false);
+  }
+  function playMusic() {
+    audioEngine.playMusic('res/music.mp3', true);
+  }
+  function stopMusic() {
+    audioEngine.stopMusic();
+  }
+  function stopEffect() {
+    audioEngine.stopEffect('res/count.mp3');
+  }
+  audioEngine.init(['res/count.mp3', 'res/music.mp3']);
+  </script>
+</body>
+</html>
