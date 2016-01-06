@@ -2,7 +2,7 @@
 
 简单封装webaudio的demo，用audio标签向下兼容安卓微信浏览器
 
-可用于简单的H5音效开发。
+可用于简单的H5音效开发。[demo](http://demo.shihua.im/webaudio-demo/)
 
 ## api
 
