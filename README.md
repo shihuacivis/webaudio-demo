@@ -22,9 +22,8 @@ param： （音乐文件地址， 是否循环播放）
 
 ```
 
-### 播放背景音乐
-一般一个应用只同时播放一个背景音乐
-param： （音乐文件地址， 是否循环播放）
+### 播放音效
+param： （音效文件地址， 是否循环播放）
 ```js
 	audioEngine.playEffect('res/count.mp3', true);
 	audioEngine.stopEffect('res/count.mp3');
